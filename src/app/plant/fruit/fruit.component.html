@@ -1,0 +1,13 @@
+<div class="parent4">  
+  <a class="ptitle"><strong><i>Fruit</i></strong></a>
+  <app-banner>Fruit Banner ..</app-banner>
+  <div>Name is:{{studentOb?.name}} and Location is: {{studentOb?.location}}</div>
+  <br>
+  <!--<button (click)="onClickFruit()">Pass To Parent</button>-->
+  <!--<input type="text" [(ngModel)]="dataFromChild">-->
+  <form (submit)="onSubmit()">
+    Transfer To Parent  - @Output:
+    <input [(ngModel)]="toParent" name=toParent>
+ </form>
+</div>
+

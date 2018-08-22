@@ -1,0 +1,9 @@
+.ptitle {
+    float: right;
+    color:green;
+}
+.parent2 {
+    padding: 20px;
+    height: 400px;
+    background-color: lightsalmon;
+}

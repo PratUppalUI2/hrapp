@@ -1,0 +1,16 @@
+<div class="parent2">
+  <a>Custom Directive in Child</a>
+  <a class="ptitle"><strong><i>{{ plantTitle }}</i></strong></a>
+  <form (submit)="onSubmit()">
+    Transfer To Child:
+    <input [(ngModel)] = "toChild" name = toChild>
+  </form>
+      <div>
+      <app-flower>App Flower..</app-flower>
+    </div>
+    <div>
+      <app-fruit (childClick) = "fromChild($event)">App Fruit..</app-fruit>
+    </div>    
+</div>
+
+

@@ -1,0 +1,14 @@
+<div class="parent3">
+  <a class="ptitle"><strong><i>Flower</i></strong></a>
+  Today is : {{ currday | date:"MM/dd/yy" }}
+  <br>
+  <u>Below is a Pipe Example:</u>
+  <br>
+  <div>
+    <ul>
+      <li *ngFor = "let num of nums">
+        {{ num | ordinal }}
+      </li>
+    </ul>
+  </div>
+</div>

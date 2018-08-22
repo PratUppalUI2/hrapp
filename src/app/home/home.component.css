@@ -1,0 +1,11 @@
+.parent1 {
+    height: 450px;
+    padding: 20px;
+    background-color: lightgray;
+    border-color: red;
+    border-width: 50px;
+}
+.ptitle {
+    float: right;
+    color:green;
+}
