@@ -2,12 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.css']
 })
-export class HomeComponent implements OnInit {
-  title = 'App with Custom Directive';
-  ptitle = 'App';
+export class DashboardComponent implements OnInit {
   footerMenu = ['Privacy', 'Disclaimer', 'Media'];
 
   constructor() { }
