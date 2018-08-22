@@ -3,10 +3,10 @@ import { FormControl, FormGroup, Validators, AbstractControl } from '@angular/fo
 
 @Component({
   selector: 'app-root',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  templateUrl: './manage.component.html',
+  styleUrls: ['./manage.component.css']
 })
-export class ContactComponent implements OnInit {
+export class ManageComponent implements OnInit {
   reactiveForm:FormGroup;
   firstname = "Test";
 

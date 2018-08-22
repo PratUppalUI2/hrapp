@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LocationsService } from './locations.service';
 
 @NgModule({
   imports: [
@@ -8,6 +7,6 @@ import { LocationsService } from './locations.service';
   ],
   declarations: [],
   exports: [],
-  providers: [ LocationsService ]
+  providers: []
 })
 export class CommonsModule { }

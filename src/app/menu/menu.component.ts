@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-    menuItems = [
-    {title: 'Home', link: 'http://zenrays.com'},
-    {title: 'Contact', link: 'http://zenrays.com/contact-zenrays'},
-    {title: 'Services', link: 'http://zenrays.com'}
-    ];
+    /*menuItems = [
+    {title: 'Home', link: 'http://Prat.com'},
+    {title: 'Contact', link: 'http://Prat.com/contact-Prat'},
+    {title: 'Services', link: 'http://Prat.com'}
+    ];*/
     menuClass: string = "menuClass2";
   
   constructor() { 

@@ -7,20 +7,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { CommonsModule } from './commons/commons.module';
 import { AppComponent } from './app.component';
-import { PlantModule } from './plant/plant.module';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
+import { ManageComponent } from './manage/manage.component';
 import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
-import { LoginGuard } from './login.guard';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
-  { path: 'Contact', component: ContactComponent},
-  { path: 'About/:aid', component: AboutComponent},
-  { path: 'login', component: LoginComponent}
+  { path: 'Manage', component: ManageComponent}
 ]
 
 @NgModule({
@@ -28,17 +22,14 @@ const appRoutes: Routes = [
     AppComponent,
     MenuComponent,
     FooterComponent,
-    AboutComponent,
-    ContactComponent,
-    HomeComponent,
-    LoginComponent
+    ManageComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     FormsModule,
     HttpModule,
-    PlantModule,
     CommonsModule,
     ReactiveFormsModule
   ],
