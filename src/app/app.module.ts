@@ -12,8 +12,10 @@ import { FooterComponent } from './footer/footer.component';
 import { ManageComponent } from './manage/manage.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatFormFieldModule, MatInputModule,
+  MatIconModule, MatListModule, MatDialogModule, MatStepperModule} from '@angular/material';
 import { TopnavbarComponent } from './topnavbar/topnavbar.component';
+import { RegisterComponent } from './register/register.component';
 
 const appRoutes: Routes = [
   { path: '', component: DashboardComponent},
@@ -29,7 +31,8 @@ const appRoutes: Routes = [
     FooterComponent,
     ManageComponent,
     DashboardComponent,
-    TopnavbarComponent
+    TopnavbarComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,14 @@ const appRoutes: Routes = [
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatDialogModule,
+    MatStepperModule,
+    MatFormFieldModule,
+    MatInputModule,
+  ],
+  entryComponents: [
+    RegisterComponent,
   ],
   exports: [],
   providers: [],

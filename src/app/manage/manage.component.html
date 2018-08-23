@@ -1,7 +1,5 @@
-<div class="container">  
-  <form [formGroup] = "reactiveForm" (ngSubmit) = "submitMyForm(reactiveForm)">
-       Name: <input type="text" formControlName = "name" name-validate><br>
-       Age: <input type="number" formControlName = "age"><br>
-       <button [disabled] = "reactiveForm.invalid">Submit Form</button>
-  </form>
+<div class="container">
+    <div class="button-row">
+        <button mat-stroked-button color="primary" (click)="openDialog()">Add Employee</button>
+      </div>
 </div>
