@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+//import { ReactiveFormsModule } from '@angular/forms';
+//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { CommonsModule } from './commons/commons.module';
 import { AppComponent } from './app.component';
@@ -14,6 +14,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 import { TopnavbarComponent } from './topnavbar/topnavbar.component';
+import { ManageModule } from './manage/manage.module';
 
 const appRoutes: Routes = [
   { path: '', component: DashboardComponent},
@@ -27,7 +28,7 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     FooterComponent,
-    ManageComponent,
+    //ManageComponent,
     DashboardComponent,
     TopnavbarComponent
   ],
@@ -37,14 +38,15 @@ const appRoutes: Routes = [
     FormsModule,
     HttpModule,
     CommonsModule,
-    ReactiveFormsModule,
-    BrowserAnimationsModule,
+    //ReactiveFormsModule,
+    //BrowserAnimationsModule,
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    ManageModule
   ],
   exports: [],
   providers: [],
